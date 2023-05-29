@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="main-header">
       <a class="header-logo"><img src="#" alt="Логотип сайта" /></a>
@@ -27,8 +29,7 @@
             <a href="" class="additional-link"><img src="#" alt="Поиск" /></a>
           </li>
           <li class="additional-item">
-            <a href="" class="additional-link"
-              ><img src="#" alt="Избранное" />
+            <a href="" class="additional-link"><img src="#" alt="Избранное" />
               <span class="number-of-favorites">12</span>
             </a>
           </li>
@@ -41,13 +42,19 @@
     <main>
       <section class="filter">
         <header>
-          <h1 class="title-of-catalog">Гостиницы Седоны</h1>
-          <div class="mini-nav">
-            <img src="#" alt="Иконка домика" class="home-icon" />
-            <img src="#" alt="Стрелочка" class="arrow-icon" />
-            <a href="index.html" class="link-to-main">Главная</a>
-          </div>
+          <h1 class="inner-title">Гостиницы Седоны</h1>
+          <ul class="breadcrams">
+            <li class="breadcrambs-item">
+              <a href="" class="breadcrambs-link">
+                <span class="visually-hidden">Главная</span>
+              </a>
+            </li>
+            <li class="breadcrambs-item">
+              <a href="" class="breadcrambs-link">Гостиницы</a>
+            </li>
+          </ul>
         </header>
+
       </section>
       <section class="catalog">
         <div class="sorting">
@@ -58,25 +65,27 @@
           <ul class="distribution-list">
             <li class="distribution-item">
               <a href="#" class="distribution-link-table">
-                <img src="#" alt="Таблица" />
+                <span class="visually-hidden">Таблица</span>
               </a>
             </li>
             <li class="distribution-item">
               <a href="#" class="distribution-link-big">
-                <img src="#" alt="Большая карточка" />
+                <span class="visually-hidden">Большая карточка</span>
               </a>
             </li>
             <li class="distribution-item">
               <a href="#" class="distribution-link-list">
-                <img src="#" alt="Список" />
+                <span class="visually-hidden">Список</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="cards-of-catalog">
-          <div class="card">
-            <h2 class="title-of-card">Amara Resort & Spa</h2>
-            <img src="#" alt="Звездное небо между гор" class="image-of-card" />
+        <ul class="cards-of-catalog">
+          <li class="card">
+            <a href="" class="card-link">
+              <h2 class="title-of-card">Amara Resort & Spa</h2>
+              <img src="#" alt="Звездное небо между гор" class="image-of-card" />
+            </a>
             <div class="about-card">
               <p>Гостиница</p>
               <p class="price">От 4000 ₽</p>
@@ -85,8 +94,8 @@
             </div>
             <span class="stars">4 звезды</span>
             <p class="rating">Рейтинг: <span class="grade">8,5</span></p>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <h2 class="title-of-card">Villas at Poco Diablo</h2>
             <img src="#" alt="Радуга над горами" class="image-of-card" />
             <div class="about-card">
@@ -97,8 +106,8 @@
             </div>
             <span class="stars">4 звезды</span>
             <p class="rating">Рейтинг: <span class="grade">9,2</span></p>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <h2 class="title-of-card">Desert Quail Inn</h2>
             <img src="#" alt="Горы на закате" class="image-of-card" />
             <div class="about-card">
@@ -109,8 +118,8 @@
             </div>
             <span class="stars">3 звезды</span>
             <p class="rating">Рейтинг: <span class="grade">6,9</span></p>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <h2 class="title-of-card">GreenTree Inn</h2>
             <img src="#" alt="Ночные горы" class="image-of-card" />
             <div class="about-card">
@@ -121,8 +130,10 @@
             </div>
             <span class="stars">2 звезды</span>
             <p class="rating">Рейтинг: <span class="grade">5,0</span></p>
-          </div>
-        </div>
+          </li>
+        </ul>
+
+        <!--  Пагинация - список ссылок -->
         <ul class="list-of-button">
           <li class="item-of-button">
             <button class="button-of-catalog-list active-button-of-catalog">
@@ -153,19 +164,9 @@
         <p class="subscribe-text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form
-          class="subcribe-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <input
-            class="field"
-            placeholder="Ваш e-mail"
-            type="email"
-            name="subscribe-email"
-            id="subscribe-email"
-            required
-          />
+        <form class="subcribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
+            required />
           <button class="subscribe-button" type="submit">
             <span class="visually-hidden">Подписаться</span>
           </button>
@@ -174,28 +175,19 @@
       <section class="footer-of-footer">
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://vk.com/htmlacademy" class="social-link"
-              ><img src="#" alt="Вконтакте"
-            /></a>
+            <a href="https://vk.com/htmlacademy" class="social-link"><img src="#" alt="Вконтакте" /></a>
           </li>
           <li class="social-item">
-            <a href=" https://t.me/htmlacademy " class="social-link"
-              ><img src="#" alt="Телеграм"
-            /></a>
+            <a href=" https://t.me/htmlacademy " class="social-link"><img src="#" alt="Телеграм" /></a>
           </li>
           <li class="social-item">
-            <a
-              href="https://www.youtube.com/user/htmlacademyru"
-              class="social-link"
-              ><img src="#" alt="YouTube"
-            /></a>
+            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link"><img src="#" alt="YouTube" /></a>
           </li>
         </ul>
         <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru" class="htmlacademy-logo"
-          ><img src="#" alt="Логотип любимой академии"
-        /></a>
+        <a href="https://htmlacademy.ru" class="htmlacademy-logo"><img src="#" alt="Логотип любимой академии" /></a>
       </section>
     </footer>
   </body>
+
 </html>
