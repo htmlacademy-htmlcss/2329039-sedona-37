@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
@@ -21,7 +21,7 @@
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Главная</a>
+            <a href="#" class="navigation-link active">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
@@ -32,12 +32,12 @@
         </ul>
         <ul class="additional-list">
           <li class="additional-item">
-            <a href="#" class="additional-link" aria-label="Поиск">
-              
+            <a href="#" class="additional-link search">
+              <span class="visually-hidde">g</span>
             </a>
           </li>
           <li class="additional-item">
-            <a href="#" class="additional-link">
+            <a href="#" class="additional-link favorite">
               <span class="visually-hidden">Избранное</span>
               <span class="number-of-favorites">12</span>
             </a>
@@ -70,47 +70,64 @@
         </p>
 
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item blue">
             <img
               src="images/advantages-item-1.jpg"
               alt="Взгляд на городок"
               width="800"
               height="385"
             />
-            <h3 class="advantages-caption">Настоящий городок</h3>
-            <p class="advantages-description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+            <div class="contain-of-advantages">
+              <h3 class="advantages-caption white-text">
+                Настоящий <span class="white-underline">городок</span>
+              </h3>
+              <p class="advantages-description white-text">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-caption">Небольшая площадь</h3>
-            <p class="advantages-description">
-              Все достопримечательности находятся очень близко
-            </p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-caption">Красивая дорога</h3>
-            <p class="advantages-description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
-          </li>
-          <li class="advantages-item">
-            <h3 class="advantages-caption">Мало туристов</h3>
-            <p class="advantages-description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
-          </li>
-          <li class="advantages-item">
+          <div class="middle-advantages">
+            <li class="advantages-item white">
+              <h3 class="advantages-caption black-text">
+                Небольшая <span class="black-underline">площадь</span>
+              </h3>
+              <p class="advantages-description">
+                Все достопримечательности находятся очень близко
+              </p>
+            </li>
+            <li class="advantages-item gray">
+              <h3 class="advantages-caption black-text">
+                Красивая <span class="black-underline">дорога</span>
+              </h3>
+              <p class="advantages-description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+            <li class="advantages-item white">
+              <h3 class="advantages-caption black-text">
+                Мало <span class="black-underline">туристов</span>
+              </h3>
+              <p class="advantages-description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+          </div>
+
+          <li class="advantages-item blue">
             <img
               src="images/advantages-item-2.jpg"
               alt="Каньон"
               width="800"
               height="385"
             />
-            <h3 class="advantages-caption">Там есть мост дьявола</h3>
-            <p class="advantages-description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+            <div class="contain-of-advantages">
+              <h3 class="advantages-caption white-text">
+                Там есть мост <span class="white-underline">дьявола</span>
+              </h3>
+              <p class="advantages-description white-text">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
           </li>
         </ul>
       </section>
