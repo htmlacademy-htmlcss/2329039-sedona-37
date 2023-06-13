@@ -280,12 +280,11 @@ h2.visually-hidden {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+
   text-align: center;
 }
 .services-item {
   box-sizing: border-box;
-  padding: 183px 85px 81px 85px;
 }
 .services-box-title {
   font-size: 24px;
@@ -391,7 +390,163 @@ h2.visually-hidden {
   background-repeat: no-repeat;
 }
 /*catalog*/
+.main-filter {
+  min-height: 415px;
+  background-color: #422110;
+  background-image: url("../images/filter.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1200px 415px, cover;
+  box-sizing: border-box;
+  padding: 35px 70px 40px;
+}
+.hotel-filter {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.inner-title {
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+  color: white;
+}
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+.home-icon {
+  background-image: url("../images/icons/home-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 12px;
+}
+.arrow-icon {
+  background-image: url("../images/icons/arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 12px;
+}
+.facilities-group {
+  border: none;
+}
+.type-house-group {
+  border: none;
+}
+.value-group {
+  border: none;
+  display: block;
+}
+.facilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.type-house-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
 
+.distribution-list {
+  display: flex;
+}
+.title-of-sorting {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.cards-of-catalog {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 70px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 340px;
+}
+.card:nth-child(3) {
+  margin-right: 0;
+}
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+.title-of-card {
+  font-size: 24px;
+  line-height: 28px;
+}
+.about-card > p {
+  font-size: 18px;
+  line-height: 21px;
+}
+.more {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 26px;
+  color: white;
+}
+.favorite-button {
+  background-color: #82b3d3;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+.favorite-button.active-button {
+  background-color: #7db54f;
+  padding: 8px 18px;
+}
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+.item-of-pagination {
+}
+
+.button-of-pagination {
+  font-size: 20px;
+  line-height: 36px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 11px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #82b3d3;
+  margin-right: 8px;
+  border-radius: 4px;
+}
 .inner-subscribe {
   min-height: 415px;
   background-color: white;
