@@ -27,7 +27,9 @@
               <a href="#" class="navigation-link">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link active">Гостиницы</a>
+              <a href="catalog.html" class="navigation-link active"
+                >Гостиницы</a
+              >
             </li>
           </ul>
           <ul class="additional-list">
@@ -49,17 +51,19 @@
         </nav>
       </header>
       <main class="main-content">
-
         <section class="main-filter">
           <h1 class="inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link home-icon" href="index.html"><span class="home-icon visually-hidden">Главная</span></a>
+              <a class="breadcrumbs-link home-icon" href="index.html"
+                ><span class="home-icon visually-hidden">Главная</span></a
+              >
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link arrow-icon">
                 <span class="visually-hidden">Стрелка</span>
-                <span>Гостиницы</span></a>
+                <span class="breadcrumbs-catalog">Гостиницы</span></a
+              >
             </li>
           </ul>
           <form
@@ -141,28 +145,33 @@
             </fieldset>
             <fieldset class="value-group">
               <legend class="value-title">Стоимость, ₽:</legend>
-              <label class="visually-hidden" for="value-from"
-                >Стоимость, от</label
-              >
-              <input
-                type="number"
-                name="value-from"
-                id="value-from"
-                min="0"
-                placeholder="0"
-                value="0"
-              />
-              <label class="visually-hidden" for="value-to"
-                >Стоимость, до</label
-              >
-              <input
-                type="number"
-                name="value-to"
-                id="value-to"
-                max="9000"
-                placeholder="9000"
-                value="9000"
-              />
+              <div class="value-wrapper">
+                <label class="visually-hidden" for="value-from"
+                  >Стоимость, от</label
+                >
+                <input
+                  type="number"
+                  name="value-from"
+                  id="value-from"
+                  min="0"
+                  placeholder="0"
+                  value="0"
+                  class="value-from"
+                />
+                <label class="visually-hidden" for="value-to"
+                  >Стоимость, до</label
+                >
+                <input
+                  type="number"
+                  name="value-to"
+                  id="value-to"
+                  max="9000"
+                  placeholder="9000"
+                  value="9000"
+                  class="value-to"
+                />
+              </div>
+
               <label class="visually-hidden" for="value-range"
                 >Ползунок диапазона стоимости</label
               >
@@ -177,9 +186,8 @@
             </fieldset>
             <div class="button-wrapper">
               <button class="apply-button" type="submit">Применить</button>
-            <button class="reset-button" type="reset">Сбросить</button>
+              <button class="reset-button" type="reset">Сбросить</button>
             </div>
-
           </form>
         </section>
         <section class="catalog">
@@ -242,7 +250,9 @@
                 <p>Гостиница</p>
                 <p class="price">От 5000 ₽</p>
                 <a href="#" class="more">Подробнее</a>
-                <button class="favorite-button active-button">В избранном</button>
+                <button class="favorite-button active-button">
+                  В избранном
+                </button>
               </div>
               <span class="stars">4 звезды</span>
               <p class="rating">Рейтинг: <span class="grade">9,2</span></p>
@@ -291,7 +301,12 @@
 
           <ul class="pagination">
             <li class="item-of-pagination">
-              <a href="#" class="button-of-pagination active-button-of-pagination"> 1 </a>
+              <a
+                href="#"
+                class="button-of-pagination active-button-of-pagination"
+              >
+                1
+              </a>
             </li>
             <li class="item-of-pagination">
               <a href="#" class="button-of-pagination">2</a>
@@ -303,7 +318,7 @@
               <a href="#" class="button-of-pagination">4</a>
             </li>
             <li class="item-of-pagination">
-              <a href="#" class="button-of-pagination">...</a>
+              <a href="#" class="button-of-pagination etc">...</a>
             </li>
             <li class="item-of-pagination">
               <a href="#" class="button-of-pagination">10</a>
@@ -318,20 +333,24 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
-            class="subcribe-form"
+            class="subscribe-form"
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
             <label class="visually-hidden" for="subscribe-email">Email</label>
-            <input
-              class="field"
-              placeholder="Ваш e-mail"
-              type="email"
-              name="subscribe-email"
-              id="subscribe-email"
-              required
-            />
-            <button class="subscribe-button" type="submit">Подписаться</button>
+            <div class="email-wrapper">
+              <input
+                class="email-field"
+                placeholder="Ваш e-mail"
+                type="email"
+                name="subscribe-email"
+                id="subscribe-email"
+                required
+              />
+              <button class="subscribe-button" type="submit">
+                Подписаться
+              </button>
+            </div>
           </form>
         </section>
         <section class="footer-contain">
