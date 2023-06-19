@@ -14,9 +14,14 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-
+html {
+  height: 100%;
+}
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -24,6 +29,7 @@ body {
 }
 
 .page-container {
+  flex-grow: 1;
   background: #ffffff;
   margin: 0 auto;
   width: 1200px;
@@ -107,7 +113,7 @@ body {
   right: 21px;
   bottom: 14px;
 }
-.additional-link.search {
+.additional-link.search-header {
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
 }
@@ -258,7 +264,7 @@ h2.visually-hidden {
   color: white;
 }
 
-.servises-text {
+.services-text {
   text-align: center;
   margin: 64px auto 20px auto;
   width: 505px;
@@ -268,7 +274,7 @@ h2.visually-hidden {
   text-transform: uppercase;
 }
 
-.servises-describtion {
+.services-description {
   width: 490px;
   text-align: center;
   margin: 20px auto 64px auto;
@@ -280,10 +286,10 @@ h2.visually-hidden {
   padding: 0;
   margin: 0;
   display: flex;
-
   text-align: center;
 }
 .services-item {
+  padding: 81px 85px;
   box-sizing: border-box;
 }
 .services-box-title {
@@ -291,34 +297,50 @@ h2.visually-hidden {
   line-height: 28px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0;
+  margin: 0;
+  margin-top: 102px;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 .services-box-text {
   font-size: 18px;
   line-height: 21px;
-
+  width: 230px;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.search {
+  padding: 96px 304px;
 }
 .search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 .search-text {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+
+  margin-bottom: 54px;
 }
 
 .hotel-search-btn {
   font-size: 20px;
   line-height: 36px;
+  font-weight: bold;
   text-decoration: none;
   background-color: #756157;
   color: white;
   text-transform: uppercase;
+  padding: 8px 50px;
+  border-radius: 4px;
+  margin-left: 108px;
 }
 .subscribe {
   min-height: 415px;
@@ -398,46 +420,60 @@ h2.visually-hidden {
   background-position: center top;
   background-size: 1200px 415px, cover;
   box-sizing: border-box;
-  padding: 35px 70px 40px;
+  padding-top: 35px;
 }
+
 .hotel-filter {
   display: flex;
   color: white;
   align-items: center;
+  padding: 40px 70px 70px;
+  justify-content: space-between;
 }
 .inner-title {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
   color: white;
+  margin-left: 70px;
 }
 .breadcrumbs {
   display: flex;
   list-style: none;
   color: white;
   padding: 0;
+  margin: 0;
+  margin-left: 70px;
+}
+.breadcrumbs-item {
+  display: inline;
+  font-size: 8px;
 }
 .home-icon {
   background-image: url("../images/icons/home-icon.svg");
   background-repeat: no-repeat;
   background-position: left;
-  width: 12px;
 }
+
 .arrow-icon {
   background-image: url("../images/icons/arrow-icon.svg");
   background-repeat: no-repeat;
   background-position: left;
-  width: 12px;
 }
+
 .facilities-group {
   border: none;
+  padding: 0;
 }
 .type-house-group {
   border: none;
+  padding: 0;
 }
 .value-group {
   border: none;
   display: block;
+  padding: 0;
+  align-self: flex-start;
 }
 .facilities-list {
   list-style: none;
@@ -449,9 +485,97 @@ h2.visually-hidden {
   padding: 0;
   margin: 0;
 }
+.facilities-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.type-house-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.value-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.control-input {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 191px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.apply-button {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  color: white;
+  border: none;
+  padding: 8px 50px;
+  margin-bottom: 32px;
+}
+.reset-button {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 8px 57.5px;
+}
+.value-wrapper {
+  display: flex;
+  width: 288px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.value-from {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+.value-to {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+.catalog {
+  padding: 50px 70px 60px 70px;
+  box-sizing: border-box;
+}
 .sorting {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .distribution-list {
@@ -461,13 +585,14 @@ h2.visually-hidden {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 .cards-of-catalog {
   list-style: none;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 70px;
+  padding-left: 0;
   border-bottom: 1px solid #e6e6e6;
 }
 .card {
@@ -525,10 +650,8 @@ h2.visually-hidden {
   margin: 0;
   display: flex;
   align-items: center;
-  margin-left: 70px;
+  margin-left: 0;
   margin-top: 40px;
-}
-.item-of-pagination {
 }
 
 .button-of-pagination {
@@ -547,6 +670,49 @@ h2.visually-hidden {
   margin-right: 8px;
   border-radius: 4px;
 }
+.button-of-pagination.active-button-of-pagination {
+  background-color: #f2f2f2;
+  color: black;
+}
+.button-of-pagination.etc {
+  background-color: #ffffff;
+  color: black;
+}
+.subscribe-form {
+  display: flex;
+}
+.email-wrapper {
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
+}
+.email-field {
+  width: 452px;
+  padding: 14px 345px 14px 20px;
+
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-right: 0;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+}
+.subscribe-button {
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding: 8px 50px;
+  background-color: #82b3d3;
+  border: none;
+  margin-left: 0;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+}
 .inner-subscribe {
   min-height: 415px;
   background-color: white;
@@ -559,6 +725,8 @@ h2.visually-hidden {
   text-align: center;
 }
 .inner-subscribe-title {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 30px;
