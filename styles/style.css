@@ -128,7 +128,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding: 8px 30px;
+  padding: 8px 34px;
   border-radius: 4px;
 }
 
@@ -576,16 +576,36 @@ h2.visually-hidden {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .distribution-list {
   display: flex;
+  padding: 0;
+  list-style: none;
+}
+.distribution-link-table {
+  flex-grow: 1;
+  background-image: url("../images/");
+}
+.distribution-link-big {
+  flex-grow: 1;
+}
+.distribution-link-list {
+  flex-grow: 1;
 }
 .title-of-sorting {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+}
+.drop-down {
+  font-family: "PT Sans";
+  width: 292px;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 131px 14px 20px;
 }
 .cards-of-catalog {
   list-style: none;
@@ -603,21 +623,46 @@ h2.visually-hidden {
   padding: 20px;
   box-sizing: border-box;
   width: 340px;
+  display: flex;
+  flex-direction: column;
 }
 .card:nth-child(3) {
   margin-right: 0;
 }
+
 .card-link {
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-direction: column;
+}
+.image-of-card {
+  order: 0;
+  margin-bottom: 16px;
 }
 .title-of-card {
   font-size: 24px;
   line-height: 28px;
+  order: 1;
+  margin: 0;
+  margin-bottom: 16px;
 }
-.about-card > p {
+.wrapper-about {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.wrapper-about > p {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 16px;
 }
 .more {
   font-size: 16px;
@@ -629,12 +674,15 @@ h2.visually-hidden {
   border-radius: 4px;
   padding: 8px 26px;
   color: white;
+  margin-right: 20px;
 }
 .favorite-button {
+  font-family: "PT Sans";
   background-color: #82b3d3;
   border: none;
   font-size: 16px;
   line-height: 20px;
+  font-weight: bold;
   text-transform: uppercase;
   color: white;
   padding: 8px 20px;
@@ -643,6 +691,19 @@ h2.visually-hidden {
 .favorite-button.active-button {
   background-color: #7db54f;
   padding: 8px 18px;
+}
+.rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating {
+  background-color: #f2f2f2;
+  padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
 }
 .pagination {
   list-style: none;
