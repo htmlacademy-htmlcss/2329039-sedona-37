@@ -71,13 +71,7 @@
           </p>
 
           <ul class="advantages-list">
-            <li class="advantages-item blue">
-              <img
-                src="images/advantages-item-1.jpg"
-                alt="Взгляд на городок"
-                width="800"
-                height="385"
-              />
+            <li class="advantages-item advantages-item--blue">
               <div class="contain-of-advantages">
                 <h3 class="advantages-caption white-text">
                   Настоящий <span class="white-underline">городок</span>
@@ -86,36 +80,41 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-            </li>
-            <div class="middle-advantages">
-              <li class="advantages-item white">
-                <h3 class="advantages-caption black-text">
-                  Небольшая <span class="black-underline">площадь</span>
-                </h3>
-                <p class="advantages-description">
-                  Все достопримечательности находятся очень близко
-                </p>
-              </li>
-              <li class="advantages-item gray">
-                <h3 class="advantages-caption black-text">
-                  Красивая <span class="black-underline">дорога</span>
-                </h3>
-                <p class="advantages-description">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </li>
-              <li class="advantages-item white">
-                <h3 class="advantages-caption black-text">
-                  Мало <span class="black-underline">туристов</span>
-                </h3>
-                <p class="advantages-description">
-                  Большинство едет в Гранд Каньон и толпится там
-                </p>
-              </li>
-            </div>
-
-            <li class="advantages-item blue">
               <img
+                class="advantages-image"
+                src="images/advantages-item-1.jpg"
+                alt="Взгляд на городок"
+                width="800"
+                height="385"
+              />
+            </li>
+            <li class="advantages-item middle">
+              <h3 class="advantages-caption black-text">
+                Небольшая <span class="black-underline">площадь</span>
+              </h3>
+              <p class="advantages-description">
+                Все достопримечательности находятся очень близко
+              </p>
+            </li>
+            <li class="advantages-item middle">
+              <h3 class="advantages-caption black-text">
+                Красивая <span class="black-underline">дорога</span>
+              </h3>
+              <p class="advantages-description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+            <li class="advantages-item middle">
+              <h3 class="advantages-caption black-text">
+                Мало <span class="black-underline">туристов</span>
+              </h3>
+              <p class="advantages-description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </li>
+            <li class="advantages-item advantages-item--blue">
+              <img
+                class="advantages-image"
                 src="images/advantages-item-2.jpg"
                 alt="Каньон"
                 width="800"
@@ -123,7 +122,9 @@
               />
               <div class="contain-of-advantages">
                 <h3 class="advantages-caption white-text">
-                  Там есть<br /><span class="white-underline">мост дьявола</span>
+                  Там есть<br /><span class="white-underline"
+                    >мост дьявола</span
+                  >
                 </h3>
                 <p class="advantages-description white-text">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -141,7 +142,8 @@
             Опытный персонал и качественное обслуживание!
           </p>
           <ul class="services-list">
-            <li class="services-item gray">
+            <li class="services-item">
+              <span class="services-icon home"></span>
               <h3 class="services-box-title">Жильё</h3>
               <p class="services-box-text">
                 Рекомендуем пожить<br />
@@ -150,6 +152,7 @@
               </p>
             </li>
             <li class="services-item">
+              <span class="services-icon food"></span>
               <h3 class="services-box-title">Еда</h3>
               <p class="services-box-text">
                 Всегда заказывайте<br />
@@ -157,7 +160,8 @@
                 вы не разочаруетесь!
               </p>
             </li>
-            <li class="services-item gray">
+            <li class="services-item">
+              <span class="services-icon gift"></span>
               <h3 class="services-box-title">Сувениры</h3>
               <p class="services-box-text">
                 Не только китайского,<br />
@@ -173,7 +177,9 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="#" class="hotel-search-btn">Поиск гостиницы в Седоне</a>
+          <button href="#" class="hotel-search-btn">
+            Поиск гостиницы в Седоне
+          </button>
         </section>
       </main>
       <footer class="main-footer">
@@ -235,7 +241,6 @@
     </div>
     <div class="modal">
       <h2 class="modal-">Поиск гостиницы в Седоне</h2>
-      
     </div>
   </body>
 </html>
