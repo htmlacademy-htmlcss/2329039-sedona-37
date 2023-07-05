@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Седона</title>
+    <title>HTML Academy: Седона</title>
+
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
     <div class="page-container">
       <header class="main-header">
-        <a class="header-logo">
-          <img
-            src="images/main-logo.svg"
-            alt="Логотип сайта"
-            width="140"
-            height="70"
-          />
-        </a>
         <nav class="main-navigation">
+          <a class="header-logo">
+            <img
+              src="images/main-logo.svg"
+              alt="Логотип сайта"
+              width="140"
+              height="70"
+            />
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a href="#" class="navigation-link active">Главная</a>
@@ -32,7 +34,7 @@
             </li>
           </ul>
           <ul class="additional-list">
-            <li class="additional-item search-header">
+            <li class="additional-item">
               <a href="#" class="additional-link search-header">
                 <span class="visually-hidden">Поиск</span>
               </a>
@@ -89,28 +91,34 @@
               />
             </li>
             <li class="advantages-item middle">
-              <h3 class="advantages-caption black-text">
-                Небольшая <span class="black-underline">площадь</span>
-              </h3>
-              <p class="advantages-description">
-                Все достопримечательности находятся очень близко
-              </p>
+              <div class="middle-wrapper">
+                <h3 class="advantages-caption black-text">
+                  Небольшая <span class="black-underline">площадь</span>
+                </h3>
+                <p class="advantages-description">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
             </li>
             <li class="advantages-item middle">
-              <h3 class="advantages-caption black-text">
-                Красивая <span class="black-underline">дорога</span>
-              </h3>
-              <p class="advantages-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
+              <div class="middle-wrapper">
+                <h3 class="advantages-caption black-text">
+                  Красивая <span class="black-underline">дорога</span>
+                </h3>
+                <p class="advantages-description">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
             </li>
             <li class="advantages-item middle">
+              <div class="middle-wrapper">
               <h3 class="advantages-caption black-text">
                 Мало <span class="black-underline">туристов</span>
               </h3>
               <p class="advantages-description">
                 Большинство едет в Гранд Каньон и толпится там
               </p>
+            </div>
             </li>
             <li class="advantages-item advantages-item--blue">
               <img
@@ -154,7 +162,8 @@
             <li class="services-item food">
               <h3 class="services-box-title">Еда</h3>
               <p class="services-box-text">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте топовый фирменный бургер, вы не
+                разочаруетесь!
               </p>
             </li>
             <li class="services-item gift">
