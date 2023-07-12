@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона</title>
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div class="page-container">
       <header class="main-header">
-        <a class="header-logo">
-          <img
-            src="images/main-logo.svg"
-            alt="Логотип сайта"
-            width="140"
-            height="70"
-          />
-        </a>
         <nav class="main-navigation">
+          <a class="header-logo">
+            <img
+              src="images/main-logo.svg"
+              alt="Логотип сайта"
+              width="140"
+              height="70"
+            />
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a href="index.html" class="navigation-link">Главная</a>
@@ -33,7 +34,7 @@
             </li>
           </ul>
           <ul class="additional-list">
-            <li class="additional-item search-header">
+            <li class="additional-item">
               <a href="#" class="additional-link search-header">
                 <span class="visually-hidden">Поиск</span>
               </a>
@@ -193,24 +194,37 @@
         <section class="catalog">
           <div class="sorting">
             <h2 class="title-of-sorting">Найдено гостиниц: 38</h2>
-            <select name="drop-down" id="selectvalue" class="drop-down">
-              <option value="#" class="drop-down-item">Сначала дешевые</option>
-            </select>
+            <div class="drop-down-wrapper">
+              <select name="drop-down" id="selectvalue" class="drop-down">
+                <option value="cheap" class="drop-down-item">
+                  Сначала дешевые
+                </option>
+                <option value="expensive" class="drop-down-item">
+                  Сначала дорогие
+                </option>
+                <option value="popular" class="drop-down-item">
+                  Сначала популярные
+                </option>
+              </select>
+            </div>
+
             <ul class="distribution-list">
               <li class="distribution-item">
-                <a href="#" class="distribution-link-table">
+                <button
+                  class="distribution-button table-button distribution-button-active"
+                >
                   <span class="visually-hidden">Таблица</span>
-                </a>
+                </button>
               </li>
               <li class="distribution-item">
-                <a href="#" class="distribution-link-big">
-                  <span class="visually-hidden">Большая карточка</span>
-                </a>
+                <button class="distribution-button slide-button">
+                  <span class="visually-hidden">Слайд-шоу</span>
+                </button>
               </li>
               <li class="distribution-item">
-                <a href="#" class="distribution-link-list">
+                <button class="distribution-button list-button">
                   <span class="visually-hidden">Список</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -227,16 +241,18 @@
                 <h2 class="title-of-card">Amara Resort & Spa</h2>
                 <a></a>
               </a>
-              <p class="hotel-text">Гостиница</p>
-              <p class="price">От 4000 ₽</p>
-              <a href="#" class="more">Подробнее</a>
-              <button class="favorite-button">В избранное</button>
-              <p class="stars-list stars-list--four">
-                <span class="visually-hidden"
-                  >Звездность гостиницы - 4 звезды</span
-                >
-              </p>
-              <p class="rating">Рейтинг: <span class="grade">8,5</span></p>
+              <div class="about-card">
+                <p class="hotel-text">Гостиница</p>
+                <p class="price">От 4000 ₽</p>
+                <a href="#" class="more">Подробнее</a>
+                <button class="favorite-button">В избранное</button>
+                <p class="stars-list stars-list--four">
+                  <span class="visually-hidden"
+                    >Звездность гостиницы - 4 звезды</span
+                  >
+                </p>
+                <p class="rating">Рейтинг: <span class="grade">8,5</span></p>
+              </div>
             </li>
             <li class="card">
               <a href="#" class="card-link">
@@ -249,16 +265,20 @@
                   height="212"
                 />
               </a>
-              <p class="hotel-text">Гостиница</p>
-              <p class="price">От 5000 ₽</p>
-              <a href="#" class="more">Подробнее</a>
-              <button class="favorite-button active-button">В избранном</button>
-              <p class="stars-list stars-list--four">
-                <span class="visually-hidden"
-                  >Звездность гостиницы - 4 звезды</span
-                >
-              </p>
-              <p class="rating">Рейтинг: <span class="grade">9,2</span></p>
+              <div class="about-card">
+                <p class="hotel-text">Гостиница</p>
+                <p class="price">От 5000 ₽</p>
+                <a href="#" class="more">Подробнее</a>
+                <button class="favorite-button active-button">
+                  В избранном
+                </button>
+                <p class="stars-list stars-list--four">
+                  <span class="visually-hidden"
+                    >Звездность гостиницы - 4 звезды</span
+                  >
+                </p>
+                <p class="rating">Рейтинг: <span class="grade">9,2</span></p>
+              </div>
             </li>
             <li class="card">
               <a href="#" class="card-link">
@@ -271,19 +291,20 @@
                   height="212"
                 />
               </a>
+              <div class="about-card">
+                <p class="hotel-text">Гостиница</p>
+                <p class="price">От 2500 ₽</p>
 
-              <p class="hotel-text">Гостиница</p>
-              <p class="price">От 2500 ₽</p>
+                <a href="#" class="more">Подробнее</a>
+                <button class="favorite-button">В избранное</button>
 
-              <a href="#" class="more">Подробнее</a>
-              <button class="favorite-button">В избранное</button>
-
-              <p class="stars-list stars-list--three">
-                <span class="visually-hidden"
-                  >Звездность гостиницы - 3 звезды</span
-                >
-              </p>
-              <p class="rating">Рейтинг: <span class="grade">6,9</span></p>
+                <p class="stars-list stars-list--three">
+                  <span class="visually-hidden"
+                    >Звездность гостиницы - 3 звезды</span
+                  >
+                </p>
+                <p class="rating">Рейтинг: <span class="grade">6,9</span></p>
+              </div>
             </li>
             <li class="card">
               <a href="#" class="card-link">
@@ -296,19 +317,20 @@
                   height="212"
                 />
               </a>
+              <div class="about-card">
+                <p class="hotel-text">Гостиница</p>
+                <p class="price">От 1500 ₽</p>
 
-              <p class="hotel-text">Гостиница</p>
-              <p class="price">От 1500 ₽</p>
+                <a href="#" class="more">Подробнее</a>
+                <button class="favorite-button">В избранное</button>
 
-              <a href="#" class="more">Подробнее</a>
-              <button class="favorite-button">В избранное</button>
-
-              <p class="stars-list stars-list--two">
-                <span class="visually-hidden"
-                  >Звездность гостиницы - 2 звезды</span
-                >
-              </p>
-              <p class="rating">Рейтинг: <span class="grade">5,0</span></p>
+                <p class="stars-list stars-list--two">
+                  <span class="visually-hidden"
+                    >Звездность гостиницы - 2 звезды</span
+                  >
+                </p>
+                <p class="rating">Рейтинг: <span class="grade">5,0</span></p>
+              </div>
             </li>
           </ul>
 
