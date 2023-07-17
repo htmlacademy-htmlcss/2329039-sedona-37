@@ -163,7 +163,17 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
 }
-
+.want-button:hover {
+  background-color: #615048;
+}
+.want-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+.want-button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 .hero {
   min-height: 485px;
   background-color: #422110;
@@ -411,7 +421,13 @@ body {
   margin: 0 auto;
   border-width: 0;
 }
-
+.hotel-search-btn:hover {
+  background-color: #615048;
+}
+.hotel-search-btn:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 .subscribe {
   min-height: 415px;
   background-color: #422110;
@@ -471,6 +487,10 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
+/*????????????????.social-link:hover {
+  background-color: #68A2CA;
+}*/
+
 .social-link.vk {
   width: 24px;
   height: 14px;
@@ -484,6 +504,13 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: black;
+}
+.footer-phone:hover {
+  color: #756157;
+}
+
+.footer-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .social-link.tg {
@@ -537,7 +564,16 @@ body {
   padding: 0;
   margin: 0 0 0 67px;
 }
-
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #fff;
+}
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .breadcrumbs-item {
   display: inline;
   font-weight: 400;
@@ -655,8 +691,16 @@ body {
   border: none;
   padding: 8px 50px;
   margin-bottom: 32px;
+  border-radius: 4px;
+}
+.apply-button:hover {
+  background-color: #68a2ca;
 }
 
+.apply-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
 .reset-button {
   font-family: "PT Sans";
   font-size: 16px;
@@ -668,7 +712,12 @@ body {
   background-color: transparent;
   padding: 8px 57.5px;
 }
-
+.reset-button:hover {
+  opacity: 0.6;
+}
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .value-wrapper {
   display: flex;
   width: 288px;
@@ -742,6 +791,12 @@ body {
   background-position: right 20px center;
   appearance: none;
 }
+.drop-down:hover {
+  outline: 2px solid #68a2ca;
+}
+.drop-down:focus {
+  outline: 2px solid #3f5e72;
+}
 
 .distribution-list {
   display: flex;
@@ -762,6 +817,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+.distribution-button:hover {
+  border: 2px solid #68a2ca;
+}
+.distribution-button:active {
+  border: 2px solid #000000;
 }
 .distribution-button-active {
   border: 2px solid #000000;
@@ -843,7 +904,13 @@ body {
   padding: 8px 26px;
   color: white;
 }
-
+.more:hover {
+  background-color: #615048;
+}
+.more:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 .favorite-button {
   font-family: "PT Sans";
   background-color: #82b3d3;
@@ -858,10 +925,24 @@ body {
   text-decoration: none;
   box-sizing: border-box;
 }
+.favorite-button:hover {
+  background-color: #68a2ca;
+}
+.favorite-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .favorite-button.active-button {
   background-color: #7db54f;
   padding: 8px 18px;
+}
+.favorite-button.active-button:hover {
+  background-color: #6c9e42;
+}
+.favorite-button.active-button:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
@@ -928,7 +1009,16 @@ body {
   border-radius: 4px;
   padding: 11px 10px;
 }
-
+.button-of-pagination:hover {
+  background-color: #68a2ca;
+}
+.button-of-pagination:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-of-pagination.active-button-of-pagination:hover {
+  background-color: #f2f2f2;
+}
 .button-of-pagination.active-button-of-pagination {
   background-color: #f2f2f2;
   color: black;
@@ -977,7 +1067,13 @@ body {
   box-sizing: border-box;
   border-radius: 0 4px 4px 0;
 }
-
+.subscribe-button:hover {
+  background-color: #68a2ca;
+}
+.subscribe-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
 .inner-subscribe {
   min-height: 415px;
   background-color: white;
