@@ -415,6 +415,7 @@ body {
 
 .search {
   padding: 96px 304px;
+  text-align: center;
 }
 
 .search-title {
@@ -435,8 +436,8 @@ body {
 }
 
 .hotel-search-btn {
-  display: block;
-  font-family: "PT Sans";
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: bold;
@@ -719,7 +720,7 @@ body {
 }
 
 .control-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 16px;
@@ -822,7 +823,7 @@ body {
 }
 
 .apply-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
@@ -848,7 +849,7 @@ body {
 }
 
 .reset-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
@@ -1178,7 +1179,7 @@ body {
 }
 
 .favorite-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   background-color: #82b3d3;
   border: none;
   font-size: 16px;
@@ -1325,7 +1326,7 @@ body {
   width: 452px;
   padding: 14px 345px 14px 20px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -1336,7 +1337,7 @@ body {
 }
 
 .subscribe-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
