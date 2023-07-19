@@ -85,8 +85,15 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 20px 16px;
+  transition: color 0.6s, transform 0.5s;
 }
-
+.navigation-link:hover {
+  color: #756257;
+  transform: scale(105%);
+}
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 .active::after {
   content: "";
   position: absolute;
@@ -127,7 +134,10 @@ body {
   background-position: center;
   background-size: 20px 20px;
 }
-
+.additional-link.favorite:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
 .number-of-favorites {
   position: absolute;
   top: 11px;
@@ -152,7 +162,10 @@ body {
   background-position: center;
   background-size: 20px 20px;
 }
-
+.search-header:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
 .want-button {
   display: block;
   font-size: 16px;
@@ -249,7 +262,7 @@ body {
 }
 
 .advantages-item.middle {
-  padding: 103px 85px;
+  padding: 114px 85px;
 }
 
 .advantages-item:nth-child(even) {
@@ -286,13 +299,15 @@ body {
   position: absolute;
   height: 2px;
   width: 60px;
-  left: 60px;
-  bottom: 0;
+  left: 58px;
+  bottom: -1px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .advantages-image {
   height: 100%;
   object-fit: cover;
+  max-width: 800px;
+  max-height: 385px;
 }
 
 .middle-advantages {
@@ -503,7 +518,7 @@ body {
   width: 1200px;
   display: flex;
   box-sizing: border-box;
-  padding: 40px 70px 30px 70px;
+  padding: 46px 70px 30px 70px;
   justify-content: space-between;
 }
 
@@ -590,8 +605,8 @@ body {
   display: flex;
   color: white;
   align-items: center;
-  padding: 40px 70px 70px;
-  justify-content: space-between;
+  padding: 40px 70px 60px;
+  justify-content: flex-start;
 }
 
 .inner-title {
@@ -608,6 +623,7 @@ body {
   color: white;
   padding: 0;
   margin: 0 0 0 67px;
+  padding-top: 8px;
 }
 
 .breadcrumbs-link {
@@ -664,17 +680,23 @@ body {
 .facilities-group {
   border: none;
   padding: 0;
+  margin: 0;
+  margin-right: 70px;
 }
 
 .type-house-group {
   border: none;
   padding: 0;
+  margin: 0;
+  margin-right: auto;
 }
 
 .value-group {
   border: none;
   display: block;
   padding: 0;
+  margin: 0;
+  margin-right: 70px;
   align-self: flex-start;
 }
 
@@ -702,6 +724,7 @@ body {
   line-height: 24px;
   font-weight: bold;
   margin-bottom: 32px;
+  padding-left: 0;
 }
 
 .type-house-title {
@@ -746,8 +769,8 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -1px;
+  top: 1px;
   background-color: #ffffff;
   border-radius: 4px;
 }
@@ -757,8 +780,8 @@ body {
   width: 11px;
   height: 6px;
   position: absolute;
-  left: 4px;
-  top: 5px;
+  left: 2px;
+  top: 6px;
   border-left: 2px solid #000000;
   border-bottom: 2px solid #000000;
   transform: rotate(-45deg);
@@ -954,7 +977,7 @@ body {
   height: 1px;
   border-top: 4px solid rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 3px;
+  top: 14px;
   left: 0;
 }
 
@@ -987,7 +1010,7 @@ body {
 }
 
 .catalog {
-  padding: 50px 70px 60px 70px;
+  padding: 48px 70px 60px 70px;
   box-sizing: border-box;
 }
 
@@ -1004,6 +1027,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 6px;
 }
 
 .drop-down-wrapper {
@@ -1145,6 +1169,8 @@ body {
 .image-of-card {
   order: 0;
   margin-bottom: 16px;
+  max-width: 300px;
+  max-height: 212px;
 }
 
 .title-of-card {
@@ -1266,7 +1292,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 0;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .button-of-pagination {
@@ -1396,6 +1422,8 @@ body {
 
 .modal {
   display: none;
+  margin-left: auto;
+  margin-right: auto;
   position: fixed;
   top: 0;
   left: 0;
