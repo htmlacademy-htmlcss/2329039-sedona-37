@@ -243,9 +243,7 @@ body {
 
 .advantages-item {
   width: 400px;
-  /* min-height: 385px; */
   background-color: rgba(131, 179, 211, 0.2);
-
   text-align: center;
   box-sizing: border-box;
 }
@@ -280,7 +278,19 @@ body {
   top: 188px;
   background-color: rgba(255, 255, 255, 0.3);
 }
-
+.middle-wrapper {
+  position: relative;
+  text-align: center;
+}
+.middle .middle-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 170px;
+  right: 170px;
+  top: 197px;
+  background-color: rgb(0, 0, 0);
+}
 .advantages-image {
   height: 100%;
   object-fit: cover;
@@ -725,7 +735,12 @@ body {
   line-height: 23px;
   color: #ffffff;
 }
-
+.checkbox-label:hover {
+  opacity: 0.6;
+}
+.checkbox-label:active {
+  opacity: 0.3;
+}
 .checkbox-label::before {
   content: "";
   width: 20px;
@@ -765,6 +780,12 @@ body {
   font-weight: 400;
   line-height: 23px;
   color: #ffffff;
+}
+.control:hover {
+  opacity: 0.6;
+}
+.control:active {
+  opacity: 0.3;
 }
 .control::before {
   content: "";
@@ -870,8 +891,12 @@ body {
   box-sizing: border-box;
   margin-right: 2px;
 }
+
 .value-from:focus {
-  outline: none;
+  outline: 3px solid #83b3d3;
+}
+.value-from:active {
+  outline: 2px solid #000;
 }
 .value-to {
   width: 143px;
@@ -886,7 +911,10 @@ body {
   box-sizing: border-box;
 }
 .value-to:focus {
-  outline: none;
+  outline: 3px solid #83b3d3;
+}
+.value-to:active {
+  outline: 2px solid #000;
 }
 .range-container {
   width: 288px;
@@ -1367,14 +1395,14 @@ body {
   background-color: #ffffff;
 }
 
-.modal-search-form {
+.modal-searching-form {
   position: relative;
   width: 577px;
   display: flex;
   flex-direction: column;
 }
 
-.modal-title {
+.modal-heading {
   margin: 0;
   margin-bottom: 64px;
   font-size: 30px;
@@ -1382,7 +1410,7 @@ body {
   text-transform: uppercase;
 }
 
-.modal-close-button {
+.modal-closing-button {
   position: absolute;
   top: 64px;
   left: 613px;
@@ -1394,21 +1422,21 @@ body {
   cursor: pointer;
 }
 
-.modal-close-button:hover {
+.modal-closing-button:hover {
   background-color: #e6e6e6;
 }
 
-.modal-close-button:focus {
+.modal-closing-button:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
 
-.modal-close-button:active {
+.modal-closing-button:active {
   background-color: #e6e6e6;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.modal-date-wrapper {
+.modal-dating-wrapper {
   display: flex;
   align-items: center;
   margin: 0;
@@ -1465,7 +1493,7 @@ body {
   border: none;
 }
 
-.notice-message {
+.notification-message {
   box-sizing: border-box;
   position: absolute;
   top: 52px;
@@ -1476,7 +1504,7 @@ body {
   color: #ff5757;
 }
 
-.approval-message {
+.approve-message {
   box-sizing: border-box;
   position: absolute;
   top: 148px;
@@ -1487,20 +1515,20 @@ body {
   color: #333333;
 }
 
-.modal-count-container {
+.count-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 48px;
 }
 
-.modal-count-wrapper {
+.count-wrapper {
   display: flex;
   align-items: center;
   margin: 0;
 }
 
-.child-modal-wrapper {
+.child-count-wrapper {
   position: relative;
   padding-right: 36px;
 }
@@ -1513,7 +1541,7 @@ body {
   margin-left: 9px;
 }
 
-.tooltip-toggle {
+.tooltip-switch {
   display: block;
   width: 26px;
   height: 25px;
@@ -1525,13 +1553,13 @@ body {
   background-position: center;
 }
 
-.tooltip-toggle:hover,
-.tooltip-toggle:focus,
-.tooltip-toggle:active {
+.tooltip-switch:hover,
+.tooltip-switch:focus,
+.tooltip-switch:active {
   background-color: #68a2ca;
 }
 
-.tooltip-message {
+.tooltip-report {
   box-sizing: border-box;
   position: absolute;
   display: none;
@@ -1547,7 +1575,7 @@ body {
   border-radius: 10px;
 }
 
-.tooltip-message::before {
+.tooltip-report::before {
   content: "";
   width: 19px;
   height: 19px;
@@ -1558,8 +1586,8 @@ body {
   background-color: #333333;
 }
 
-.tooltip-toggle:hover + .tooltip-message,
-.tooltip-toggle:focus + .tooltip-message {
+.tooltip-switch:hover + .tooltip-message,
+.tooltip-switch:focus + .tooltip-message {
   display: block;
 }
 

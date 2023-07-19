@@ -14,7 +14,7 @@
     <div class="page-container">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="header-logo">
+          <a href="index.html" class="header-logo">
             <img
               src="images/main-logo.svg"
               alt="Логотип сайта"
@@ -217,7 +217,11 @@
         <section class="footer-contain">
           <ul class="social-list">
             <li class="social-item">
-              <a href="https://vk.com/htmlacademy" class="social-link vk" target="_blank">
+              <a
+                href="https://vk.com/htmlacademy"
+                class="social-link vk"
+                target="_blank"
+              >
                 <span class="visually-hidden">Вконтакте</span>
                 <svg
                   class="social-svg"
@@ -235,7 +239,11 @@
               </a>
             </li>
             <li class="social-item">
-              <a href="tg://resolve?domain=htmlacademy" class="social-link tg" target="_blank">
+              <a
+                href="tg://resolve?domain=htmlacademy"
+                class="social-link tg"
+                target="_blank"
+              >
                 <span class="visually-hidden">Телеграм</span>
                 <svg
                   class="social-svg"
@@ -272,7 +280,11 @@
             </li>
           </ul>
           <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a href="https://htmlacademy.ru" class="htmlacademy-logo" target="_blank">
+          <a
+            href="https://htmlacademy.ru"
+            class="htmlacademy-logo"
+            target="_blank"
+          >
             <svg
               class="htmlacademy-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -290,8 +302,8 @@
     </div>
     <div class="modal">
       <div class="modal-wrapper">
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-close-button" type="button">
+        <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
+        <button class="modal-closing-button" type="button">
           <span class="visually-hidden">Закрыть окно</span>
           <svg
             width="14"
@@ -308,11 +320,11 @@
           </svg>
         </button>
         <form
-          class="modal-search-form"
+          class="modal-searching-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <p class="modal-date-wrapper">
+          <p class="modal-dating-wrapper">
             <label class="modal-label" for="arrival-date">Дата заезда:</label>
             <input
               class="modal-field"
@@ -323,8 +335,10 @@
               placeholder="Укажите дату"
             />
           </p>
-          <p class="notice-message">Мы не можем отправить вас в прошлое.</p>
-          <p class="modal-date-wrapper">
+          <p class="notification-message">
+            Мы не можем отправить вас в прошлое.
+          </p>
+          <p class="modal-dating-wrapper">
             <label class="modal-label" for="exit-date">Дата выезда:</label>
             <input
               class="modal-field"
@@ -335,11 +349,11 @@
               placeholder="Укажите дату"
             />
           </p>
-          <p class="approval-message">
+          <p class="approve-message">
             На эти даты есть свободные номера. Пока есть.
           </p>
-          <div class="modal-count-container">
-            <p class="modal-count-wrapper">
+          <div class="count-container">
+            <p class="count-wrapper">
               <label class="modal-label adult-modal-label" for="adult-value"
                 >Взрослые:</label
               >
@@ -383,18 +397,18 @@
                 </svg>
               </button>
             </p>
-            <p class="modal-count-wrapper">
-              <span class="child-modal-wrapper">
+            <p class="count-wrapper">
+              <span class="child-count-wrapper">
                 <label class="modal-label child-modal-label" for="child-value"
                   >Дети:</label
                 >
                 <span class="tooltip">
                   <button
-                    class="tooltip-toggle"
+                    class="tooltip-switch"
                     aria-labelledby="tooltip-child-value"
                   ></button>
                   <span
-                    class="tooltip-message"
+                    class="tooltip-report"
                     role="tooltip"
                     id="tooltip-child-value"
                     >Укажите количество детей, которые будут с вами, возраст
