@@ -278,18 +278,17 @@ body {
   top: 188px;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.middle-wrapper {
+.black-text {
   position: relative;
-  text-align: center;
 }
-.middle .middle-wrapper::after {
+.black-text::after {
   content: "";
   position: absolute;
   height: 2px;
-  left: 170px;
-  right: 170px;
-  top: 197px;
-  background-color: rgb(0, 0, 0);
+  width: 60px;
+  left: 60px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .advantages-image {
   height: 100%;
@@ -876,12 +875,27 @@ body {
   width: 288px;
   flex-direction: row;
   align-items: flex-start;
+  position: relative;
 }
 
+.value-label {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.value-label-from {
+  left: 111px;
+}
+.value-label-to {
+  left: 255px;
+}
 .value-from {
   width: 143px;
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -890,8 +904,13 @@ body {
   padding: 12px 20px;
   box-sizing: border-box;
   margin-right: 2px;
+  -moz-appearance: textfield;
 }
-
+.value-from::-webkit-outer-spin-button,
+.value-from::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .value-from:focus {
   outline: 3px solid #83b3d3;
 }
@@ -902,19 +921,25 @@ body {
   width: 143px;
   margin: 0;
   padding: 12px 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
   border: none;
   border-radius: 0 4px 4px 0;
   box-sizing: border-box;
+  -moz-appearance: textfield;
 }
 .value-to:focus {
   outline: 3px solid #83b3d3;
 }
 .value-to:active {
   outline: 2px solid #000;
+}
+.value-to::-webkit-outer-spin-button,
+.value-to::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .range-container {
   width: 288px;
@@ -1586,8 +1611,8 @@ body {
   background-color: #333333;
 }
 
-.tooltip-switch:hover + .tooltip-message,
-.tooltip-switch:focus + .tooltip-message {
+.tooltip:hover .tooltip-report,
+.tooltip-switch:focus + .tooltip-report {
   display: block;
 }
 
